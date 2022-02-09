@@ -1,7 +1,8 @@
-#requirements
+# requirements
 
 mbed-cli
 
-#compilation
+# run
 
+mbed-cli deploy
 mbed-cli compile 
