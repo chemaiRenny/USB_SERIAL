@@ -1,10 +1,9 @@
 # requirements
 
-mbed-cli
-picocom - read and write serial packets
+- mbed-cli
+- picocom - read and write serial packets
 
 # run
 
-mbed-cli deploy &&
-mbed-cli compile 
+- mbed-cli deploy && mbed-cli compile 
 
