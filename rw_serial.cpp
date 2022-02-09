@@ -13,11 +13,11 @@ int main()
     sp.set_baud(BAUDRATE); //baudrate
     while(1)
     {
-        
-        sp.read(buf,sizeof(buf));  //read serial Object
-        sp.write(buf,sizeof(buf)); //write to serial object
-
-        myLed = !myLed;
+        if(sp.read(buf,sizeof(buf)));  //read serial Object
+        {
+            sp.write(buf,sizeof(buf)); //write to serial object
+            myLed = !myLed;
+        }
         //ThisThread::sleep_for(500ms); //no need for wait
     }
 }
